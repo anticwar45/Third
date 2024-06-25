@@ -7,7 +7,7 @@ public class Person {
     private String middleName;
     private String familyName;
     private int age;
-    private Calendar calendar = Calendar.getInstance();
+    private final Calendar calendar = Calendar.getInstance();
 
     public Person(String name, String middleName, String familyName, int age) {
         this.name = name;
