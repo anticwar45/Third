@@ -9,11 +9,13 @@ public class NumberDigits {
         System.out.println("Введите число:");
         int number = scanner.nextInt();
 
+        int numberModulus = Math.abs(number);
+
         int allDigitsSum = 0;
         int oddDigitsSum = 0;
         int maxDigit = 0;
 
-        for (int i = number; i > 0; i /= 10) {
+        for (int i = numberModulus; i > 0; i /= 10) {
             int lastDigit = i % 10;
             allDigitsSum += lastDigit;
 
